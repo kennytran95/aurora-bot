@@ -76,11 +76,11 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'me too',
         })
-        message.react(\:regional_indicator_t:);
-        message.react(\:regional_indicator_y:);
-        message.react(\:regional_indicator_p:);
-        message.react(\:regional_indicator_o:);
-        message.react(\:regional_indicator_s:);
+        message.react('🇹');
+        message.react('🇾');
+        message.react('🇵');
+        message.react('🇴');
+        message.react('🇸');
       }
     }
   }

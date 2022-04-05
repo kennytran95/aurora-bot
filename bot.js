@@ -128,6 +128,14 @@ client.on('messageCreate', message => {
   }
 })
 
+client.on('messageCreate', message => {
+  if(message.content === 'thomas') {
+    message.reply({
+      content: 'd-daddy...',
+    })
+  }
+})
+
 //forget me too
 client.on('messageCreate', message => {
   if(message.content === '!forget me too') {

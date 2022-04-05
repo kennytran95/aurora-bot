@@ -142,6 +142,11 @@ client.on('messageCreate', message => {
   }
 })
 
-
+client.on('messageCreate', message => {
+  if(message.content === 'shawn') {
+    message.react("🍃");
+    message.react("❓");
+  }
+})
 
 client.login(process.env.BOT_TOKEN);

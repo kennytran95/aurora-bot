@@ -10,7 +10,7 @@ const client = new Discord.Client({
 
 client.on('ready', () => {
   console.log('Aurora is awake')
-  bot.user.setPresence({
+  client.user.setPresence({
     status: "online",
     game: {
         name: "!help",

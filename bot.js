@@ -69,19 +69,16 @@ client.on('messageCreate', message => {
 
 //if kenny says
 client.on('messageCreate', message => {
-  let authorId = message.author.id;
-  if(authorId === '158472223164858368') {
-    if (message.content === 'i love typos') {
-      if(message.author.bot === false) {
-        message.reply({
-          content: 'me too',
-        })
-        message.react('🇹');
-        message.react('🇾');
-        message.react('🇵');
-        message.react('🇴');
-        message.react('🇸');
-      }
+  if (message.content === 'i love typos') {
+    if(message.author.bot === false) {
+      message.reply({
+        content: 'me too',
+      })
+      message.react('🇹');
+      message.react('🇾');
+      message.react('🇵');
+      message.react('🇴');
+      message.react('🇸');
     }
   }
 })
@@ -128,6 +125,15 @@ client.on('messageCreate', message => {
         message.react("<:tubby:701568628331642950>");
       }
     }
+  }
+})
+
+//forget me too
+client.on('messageCreate', message => {
+  if(message.content === '!forget me too') {
+    message.reply({
+      content: '$botify play forget me too',
+    })
   }
 })
 

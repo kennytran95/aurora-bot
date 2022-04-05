@@ -20,7 +20,7 @@ client.on('messageCreate', (message) => {
   }
 })
 
-client.on('message', message => {
+client.on('messageCreate', message => {
   if(message.content === 'aww aurora') {
     message.react("🐈");
     message.react("🥰");

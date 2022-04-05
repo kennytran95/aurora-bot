@@ -58,7 +58,9 @@ client.on('messageCreate', message => {
   if(authorId === '444684068567908363') {
     if (message.content === 'feet') {
       if(message.author.bot === false) {
-        console.log('Maow?');
+        message.reply({
+          content: 'Maow..?',
+        })
       }
     }
   }
@@ -70,7 +72,9 @@ client.on('messageCreate', message => {
   if(authorId === '192822300289138690') {
     if (message.content === 'adc') {
       if(message.author.bot === false) {
-        console.log('https://www.youtube.com/watch?v=lJmFZYSn0TE');
+        message.reply({
+          content: 'https://www.youtube.com/watch?v=lJmFZYSn0TE',
+        })
       }
     }
   }
@@ -82,7 +86,9 @@ client.on('messageCreate', message => {
   if(authorId === '224431000699011072') {
     if (message.content === 'quick shot to focus up') {
       if(message.author.bot === false) {
-        console.log('MAOWWWWWWWWW!');
+        message.reply({
+          content: 'MAAAOOOOOWWWWWWWW',
+        })
       }
     }
   }

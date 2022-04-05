@@ -61,6 +61,7 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'Maow..?',
         })
+        message.react(":pimptubby:");
       }
     }
   }
@@ -75,7 +76,11 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'me too',
         })
-        message.react("🥰");
+        message.react(":regional_indicator_t:");
+        message.react(":regional_indicator_y:");
+        message.react(":regional_indicator_p:");
+        message.react(":regional_indicator_o:");
+        message.react(":regional_indicator_s:");
       }
     }
   }
@@ -119,6 +124,7 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'stop',
         })
+        message.react(":tubby:");
       }
     }
   }

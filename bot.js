@@ -12,22 +12,6 @@ client.on('ready', () => {
   console.log('Aurora is awake')
 })
 
-client.on('messageCreate', (message) => {
-  if(message.content === 'hi aurora') {
-    message.reply({
-      content: 'maow',
-    })
-  }
-})
-
-client.on('messageCreate', message => {
-  if(message.content === 'aurora') {
-    message.react("🐈");
-    message.react("🥰");
-    message.react("🐱");
-  }
-})
-
 let wordBank = [
   "maow. funny lookin aurora picture ya got there. maow.",
   "maow, it's maow channel",
@@ -51,9 +35,48 @@ client.on('messageCreate', message => {
   }
 })
 
-//thomas says feet
+
+//full fun commands
 client.on('messageCreate', message => {
   let authorId = message.author.id;
+
+  if(message.content === 'hi aurora') {
+    message.reply({
+      content: 'maow',
+    })
+  }
+
+  if(message.content === 'aurora') {
+    message.react("🐈");
+    message.react("🥰");
+    message.react("🐱");
+  }
+
+  //lux
+  if(authorId === '221787450740178947') {
+    if (message.content === 'lux') {
+      if(message.author.bot === false) {
+        message.reply({
+          content: 'stop',
+        })
+        message.react("<:tubby:701568628331642950>");
+      }
+    }
+  }
+
+  //if shawn says adc
+  if(authorId === '192822300289138690') {
+    if (message.content === 'adc') {
+      if(message.author.bot === false) {
+        message.reply({
+          content: 'https://www.youtube.com/watch?v=lJmFZYSn0TE',
+        })
+        message.react("<:slurp:661531184508960768>");
+      }
+    }
+  }
+
+  //thomas says feet
   if(authorId === '444684068567908363') {
     if (message.content === 'feet') {
       if(message.author.bot === false) {
@@ -64,10 +87,8 @@ client.on('messageCreate', message => {
       }
     }
   }
-})
 
-//love typos
-client.on('messageCreate', message => {
+  //love typos
   if (message.content === 'i love typos') {
     if(message.author.bot === false) {
       message.reply({
@@ -80,58 +101,24 @@ client.on('messageCreate', message => {
       message.react('🇸');
     }
   }
-})
 
-//if shawn says adc
-client.on('messageCreate', message => {
-  let authorId = message.author.id;
-  if(authorId === '192822300289138690') {
-    if (message.content === 'adc') {
-      if(message.author.bot === false) {
-        message.reply({
-          content: 'https://www.youtube.com/watch?v=lJmFZYSn0TE',
-        })
-        message.react("<:slurp:661531184508960768>");
-      }
-    }
-  }
-})
-
-//peter says quick shot
-client.on('messageCreate', message => {
+  //quick shot
   if (message.content === 'quick shot to focus up') {
     message.reply({
       content: 'MAAAOOOOOWWWWWWWW',
     })
     message.react("<:tubby:701568628331642950>");
   }
-})
 
-//robin says lux
-client.on('messageCreate', message => {
-  let authorId = message.author.id;
-  if(authorId === '221787450740178947') {
-    if (message.content === 'lux') {
-      if(message.author.bot === false) {
-        message.reply({
-          content: 'stop',
-        })
-        message.react("<:tubby:701568628331642950>");
-      }
-    }
-  }
-})
-
-client.on('messageCreate', message => {
-  if(message.content === 'thomas') {
+  //thomas
+  if(message.content.toLowerCase() === 'thomas') {
     message.reply({
       content: 'd-daddy...',
     })
   }
-})
 
-client.on('messageCreate', message => {
-  if(message.content === 'shawn') {
+  //shawn
+  if(message.content.toLowerCase() === 'shawn') {
     message.react("🍃");
     message.react("❓");
   }

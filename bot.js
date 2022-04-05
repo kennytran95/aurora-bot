@@ -95,7 +95,7 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'https://www.youtube.com/watch?v=lJmFZYSn0TE',
         })
-
+        message.react("<:slurp:661531184508960768>");
       }
     }
   }

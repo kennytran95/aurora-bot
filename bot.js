@@ -37,7 +37,7 @@ let wordBank = [
 ]
 
 client.on('messageCreate', message => {
-if(message.channel.id === '960718256908435517') {
+if(message.channel.id === '567613938158534666') {
   if(message.author.bot === false) {
     console.log('Dis iz auwora channel not urs. Meow.');
     let authorId = message.author.id;

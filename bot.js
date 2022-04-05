@@ -21,6 +21,12 @@ client.on('messageCreate', (message) => {
 })
 
 client.on('messageCreate', message => {
+  if(message.content === 'aurora') {
+    message.react("🐈");
+  }
+})
+
+client.on('messageCreate', message => {
   if(message.content === 'aww aurora') {
     message.react("🐈");
     message.react("🥰");
@@ -136,13 +142,6 @@ client.on('messageCreate', message => {
   }
 })
 
-//forget me too
-client.on('messageCreate', message => {
-  if(message.content === '!forget me too') {
-    message.reply({
-      content: '$botify play forget me too',
-    })
-  }
-})
+
 
 client.login(process.env.BOT_TOKEN);

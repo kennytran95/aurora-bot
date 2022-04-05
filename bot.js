@@ -66,7 +66,7 @@ client.on('messageCreate', message => {
 
   //if shawn says adc
   if(authorId === '192822300289138690') {
-    if (message.content === 'adc') {
+    if (message.content.includes('adc')) {
       if(message.author.bot === false) {
         message.reply({
           content: 'https://www.youtube.com/watch?v=lJmFZYSn0TE',
@@ -118,7 +118,7 @@ client.on('messageCreate', message => {
   }
 
   //shawn
-  if(message.content.toLowerCase() === 'shawn') {
+  if(message.content.toLowerCase().inclues('shawn')) {
     message.react("🍃");
     message.react("❓");
   }

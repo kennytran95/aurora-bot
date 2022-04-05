@@ -33,7 +33,8 @@ let wordBank = [
   "maow, it's maow channel",
   "That isn't me.. Better pay up or else!",
   "You're not tubby... I'm on it blackshoe!",
-  "You want meow to forget you? Okay forget meow tooooooo"
+  "You want meow to forget you? Okay forget meow tooooooo",
+  "MAAAAOOOOOOWWW"
 ]
 
 client.on('messageCreate', message => {
@@ -43,7 +44,7 @@ if(message.channel.id === '567613938158534666') {
     let authorId = message.author.id;
     if(authorId !== '444684068567908363') {
       message.reply({
-        content: wordBank[Math.floor(Math.random() * 5)],
+        content: wordBank[Math.floor(Math.random() * 6)],
       })
     }
   }

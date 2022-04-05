@@ -106,15 +106,12 @@ client.on('messageCreate', message => {
 
 //peter says quick shot
 client.on('messageCreate', message => {
-  let authorId = message.author.id;
-  if(authorId === '224431000699011072') {
-    if (message.content === 'quick shot to focus up') {
-      if(message.author.bot === false) {
-        message.reply({
-          content: 'MAAAOOOOOWWWWWWWW',
-        })
-        message.react("<:tubby:701568628331642950>");
-      }
+  if (message.content === 'quick shot to focus up') {
+    if(message.author.bot === false) {
+      message.reply({
+        content: 'MAAAOOOOOWWWWWWWW',
+      })
+      message.react("<:tubby:701568628331642950>");
     }
   }
 })

@@ -80,7 +80,7 @@ client.on('messageCreate', message => {
   }
 })
 
-//peter says quick shot to focus up
+//peter says quick shot
 client.on('messageCreate', message => {
   let authorId = message.author.id;
   if(authorId === '224431000699011072') {
@@ -93,5 +93,6 @@ client.on('messageCreate', message => {
     }
   }
 })
+
 
 client.login(process.env.BOT_TOKEN);

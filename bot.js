@@ -118,7 +118,7 @@ client.on('messageCreate', message => {
   }
 
   //shawn
-  if(message.content.inclues('shawn')) {
+  if(message.content.includes('shawn')) {
     message.react("🍃");
     message.react("❓");
   }

@@ -10,14 +10,6 @@ const client = new Discord.Client({
 
 client.on('ready', () => {
   console.log('Aurora is awake')
-  client.user.setPresence({
-    status: "online",
-    game: {
-        name: "!help",
-        type: "STREAMING",
-        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    }
-  });
 })
 
 let wordBank = [

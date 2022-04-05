@@ -23,23 +23,16 @@ client.on('messageCreate', (message) => {
 client.on('messageCreate', message => {
   if(message.content === 'aurora') {
     message.react("🐈");
-  }
-})
-
-client.on('messageCreate', message => {
-  if(message.content === 'aww aurora') {
-    message.react("🐈");
     message.react("🥰");
     message.react("🐱");
   }
 })
 
 let wordBank = [
-  "maow. this isn't aurora... Gimme fishie now",
+  "maow. funny lookin aurora picture ya got there. maow.",
   "maow, it's maow channel",
-  "That isn't me.. Better pay up or else!",
-  "You're not tubby... I'm on it blackshoe!",
-  "You want meow to forget you? Okay forget meow tooooooo",
+  "That isn't me.. belly rubs pls",
+  "MAOW?! What's that sound?! Oh it's just you posting not me in the channel...",
   "MAAAAOOOOOOWWW"
 ]
 
@@ -51,18 +44,18 @@ client.on('messageCreate', message => {
       let authorId = message.author.id;
       if(authorId !== '444684068567908363') {
         message.reply({
-          content: wordBank[Math.floor(Math.random() * 6)],
+          content: wordBank[Math.floor(Math.random() * 5)],
         })
       }
     }
   }
 })
 
-//thomas says quick shot to focus up
+//thomas says feet
 client.on('messageCreate', message => {
   let authorId = message.author.id;
   if(authorId === '444684068567908363') {
-    if (message.content === 'feet' || message.content === 'boobs') {
+    if (message.content === 'feet') {
       if(message.author.bot === false) {
         message.reply({
           content: 'Maow..?',
@@ -73,7 +66,7 @@ client.on('messageCreate', message => {
   }
 })
 
-//if kenny says
+//love typos
 client.on('messageCreate', message => {
   if (message.content === 'i love typos') {
     if(message.author.bot === false) {
@@ -107,12 +100,10 @@ client.on('messageCreate', message => {
 //peter says quick shot
 client.on('messageCreate', message => {
   if (message.content === 'quick shot to focus up') {
-    if(message.author.bot === false) {
-      message.reply({
-        content: 'MAAAOOOOOWWWWWWWW',
-      })
-      message.react("<:tubby:701568628331642950>");
-    }
+    message.reply({
+      content: 'MAAAOOOOOWWWWWWWW',
+    })
+    message.react("<:tubby:701568628331642950>");
   }
 })
 

@@ -66,7 +66,22 @@ client.on('messageCreate', message => {
   }
 })
 
-//if shawn says weed
+//if kenny says
+client.on('messageCreate', message => {
+  let authorId = message.author.id;
+  if(authorId === '158472223164858368') {
+    if (message.content === 'i love typos') {
+      if(message.author.bot === false) {
+        message.reply({
+          content: 'me too',
+        })
+        message.react("🥰");
+      }
+    }
+  }
+})
+
+//if shawn says adc
 client.on('messageCreate', message => {
   let authorId = message.author.id;
   if(authorId === '192822300289138690') {
@@ -75,6 +90,7 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'https://www.youtube.com/watch?v=lJmFZYSn0TE',
         })
+
       }
     }
   }
@@ -94,5 +110,18 @@ client.on('messageCreate', message => {
   }
 })
 
+//robin says lux
+client.on('messageCreate', message => {
+  let authorId = message.author.id;
+  if(authorId === '221787450740178947') {
+    if (message.content === 'lux') {
+      if(message.author.bot === false) {
+        message.reply({
+          content: 'stop',
+        })
+      }
+    }
+  }
+})
 
 client.login(process.env.BOT_TOKEN);

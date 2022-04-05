@@ -39,24 +39,24 @@ let wordBank = [
 
 //if anyone except thomas talks in the aurora channel
 client.on('messageCreate', message => {
-if(message.channel.id === '567613938158534666') {
-  if(message.author.bot === false) {
-    console.log('Dis iz auwora channel not urs. Meow.');
-    let authorId = message.author.id;
-    if(authorId !== '444684068567908363') {
-      message.reply({
-        content: wordBank[Math.floor(Math.random() * 6)],
-      })
+  if(message.channel.id === '567613938158534666') {
+    if(message.author.bot === false) {
+      console.log('Dis iz auwora channel not urs. Meow.');
+      let authorId = message.author.id;
+      if(authorId !== '444684068567908363') {
+        message.reply({
+          content: wordBank[Math.floor(Math.random() * 6)],
+        })
+      }
     }
   }
-}
 })
 
 //thomas says quick shot to focus up
 client.on('messageCreate', message => {
   let authorId = message.author.id;
   if(authorId === '444684068567908363') {
-    if (message.content === 'feet') {
+    if (message.content === 'feet' || message.content === 'boobs') {
       if(message.author.bot === false) {
         message.reply({
           content: 'Maow..?',

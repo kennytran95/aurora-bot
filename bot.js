@@ -46,7 +46,7 @@ client.on('messageCreate', message => {
     })
   }
 
-  if(message.content === 'aurora') {
+  if(message.content.includes('aurora')) {
     message.react("🐈");
     message.react("🥰");
     message.react("🐱");
@@ -103,7 +103,7 @@ client.on('messageCreate', message => {
   }
 
   //quick shot
-  if (message.content === 'quick shot to focus up') {
+  if (message.content.includes('quick shot to focus up')) {
     message.reply({
       content: 'MAAAOOOOOWWWWWWWW',
     })

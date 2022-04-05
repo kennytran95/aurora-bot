@@ -53,8 +53,8 @@ client.on('messageCreate', message => {
   }
 
   //lux
-  if(authorId === '221787450740178947') {
-    if (message.content === 'lux') {
+  // if(authorId === '221787450740178947') {
+    if (message.content.includes('lux')) {
       if(message.author.bot === false) {
         message.reply({
           content: 'stop',
@@ -62,7 +62,7 @@ client.on('messageCreate', message => {
         message.react("<:tubby:701568628331642950>");
       }
     }
-  }
+  // }
 
   //if shawn says adc
   if(authorId === '192822300289138690') {

@@ -61,7 +61,7 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'Maow..?',
         })
-        message.react(":pimptubby:");
+        message.react('<:pimptubby:701569678685765693>');
       }
     }
   }
@@ -110,6 +110,7 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'MAAAOOOOOWWWWWWWW',
         })
+        message.react("<:tubby:701568628331642950>");
       }
     }
   }
@@ -124,7 +125,7 @@ client.on('messageCreate', message => {
         message.reply({
           content: 'stop',
         })
-        message.react(":tubby:");
+        message.react("<:tubby:701568628331642950>");
       }
     }
   }

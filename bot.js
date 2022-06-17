@@ -1,4 +1,9 @@
+const express = require('express');
 require('dotenv').config()
+
+const PORT = process.env.PORT || 5000;
+
+const app = express();
 
 const Discord = require('discord.js');
 const client = new Discord.Client({
@@ -154,3 +159,6 @@ client.on('messageCreate', message => {
 })
 
 client.login(process.env.BOT_TOKEN);
+app.listn(PORT, () => {
+  console.log(`Aurora is listening on port: ${PORT}`)
+})

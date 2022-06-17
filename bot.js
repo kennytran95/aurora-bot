@@ -8,6 +8,8 @@ const client = new Discord.Client({
   ]
 })
 
+const BOT_PREFIX = '!'
+
 client.on('ready', () => {
   console.log('Aurora is awake')
 })
@@ -19,6 +21,33 @@ let wordBank = [
   "MAOW?! What's that sound?! Oh it's just you posting not me in the channel...",
   "MAAAAOOOOOOWWW"
 ]
+
+client.on('messageCreate', message => {
+  if(message.content === `${BOT_PREFIX}focus`) {
+    message.reply({
+      content: `Quick shot to focus up! \n https://youtu.be/Np_38LZp_DM?t=11`
+    })
+  }
+})
+
+client.on('messageCreate', message => {
+  if(message.content === `${BOT_PREFIX}thinkcard`) {
+    message.reply({
+      content: `🎮  Professional player for 2 years 🎮
+      ⚖️  Coach for 6 years ⚖️
+      ⏰  Only ever missed playoffs twice ⏰
+      📢 airhorns 📢
+      🏅 Top 4, 4 times 🏅
+      📢 airhorns 📢
+      🏆 Been to Finals 🏆
+      🌏  Been to Worlds 3 times 🌏
+      ✈️  Quarter Finals twice ✈️
+      \n
+      https://www.youtube.com/watch?v=Lzs6mlb25ns
+      `
+    })
+  }
+})
 
 //if anyone except thomas talks in the aurora channel
 client.on('messageCreate', message => {

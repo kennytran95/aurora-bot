@@ -19,7 +19,9 @@ client.on('ready', () => {
   console.log('Aurora is awake')
 })
 
-setInterval(console.log('Aurora is lurkin... Meow.'), 12000000);
+setInterval(() => {
+  console.log('Aurora is lurkin... Meow.')
+}, 12000000);
 
 let wordBank = [
   "maow. funny lookin aurora picture ya got there. maow.",

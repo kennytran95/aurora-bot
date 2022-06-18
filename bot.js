@@ -61,7 +61,7 @@ client.on('messageCreate', message => {
 client.on('messageCreate', message => {
   if(message.content === `${BOT_PREFIX}rules`) {
     message.reply({
-      content: `https://media.discordapp.net/attachments/249040198883737601/945292551710199838/unknown.png?width=660&height=603`
+      content: `https://media.discordapp.net/attachments/249040198883737601/987609935934275584/unknown.png?width=625&height=603`
     })
   }
 })

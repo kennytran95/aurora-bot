@@ -58,6 +58,15 @@ client.on('messageCreate', message => {
   }
 })
 
+client.on('messageCreate', message => {
+  if(message.content === `${BOT_PREFIX}rules`) {
+    message.reply({
+      content: `https://media.discordapp.net/attachments/249040198883737601/945292551710199838/unknown.png?width=660&height=603`
+    })
+  }
+})
+
+
 //if anyone except thomas talks in the aurora channel
 client.on('messageCreate', message => {
   if(message.channel.id === '567613938158534666') {
